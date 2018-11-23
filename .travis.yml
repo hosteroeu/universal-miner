@@ -14,10 +14,11 @@ env:
   matrix:
   - NODE_INSTALLER=npm
 script:
-- npm run package
+- npm run make $TRAVIS_OS_NAME
 deploy:
   provider: releases
   api_key: $GITHUB_TOKEN
+  file: $TRAVIS_OS_NAME
   skip_cleanup: true
   on:
     tags: true
