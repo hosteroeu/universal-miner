@@ -1,17 +1,20 @@
 language: node_js
 node_js:
 - '8'
-os:
-- linux
-- osx
-dist: trusty
-osx_image: xcode8.3
-sudo: required
+matrix:
+  include:
+  - os: linux
+    dist: xenial
+    sudo: required
+    addons:
+      apt:
+        packages:
+          - fakeroot
+  - os: osx
 cache:
   directories:
   - node_modules
 env:
-  matrix:
   - NODE_INSTALLER=npm
 script:
 - npm run make $TRAVIS_OS_NAME
