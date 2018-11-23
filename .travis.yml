@@ -13,5 +13,5 @@ cache:
 env:
   matrix:
   - NODE_INSTALLER=npm
-after_success:
-- npm run dist
+script:
+- npm run package
