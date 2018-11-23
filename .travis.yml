@@ -15,3 +15,9 @@ env:
   - NODE_INSTALLER=npm
 script:
 - npm run package
+deploy:
+  provider: releases
+  api_key: $GITHUB_TOKEN
+  skip_cleanup: true
+  on:
+    tags: true
