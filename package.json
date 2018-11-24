@@ -1,7 +1,7 @@
 {
   "name": "hostero-miner",
   "productName": "hostero-miner",
-  "version": "1.0.0",
+  "version": "0.4",
   "description": "My Electron application description",
   "main": "src/index.js",
   "scripts": {
@@ -24,8 +24,7 @@
           "zip"
         ],
         "linux": [
-          "deb",
-          "rpm"
+          "deb"
         ]
       },
       "electronPackagerConfig": {
