@@ -20,7 +20,7 @@ script:
 - npm run make
 deploy:
   provider: releases
-  api_key: $GITHUB_TOKEN
+  api_key: b81085d294015a236ea03e8bd310d38c14618e42
   file_glob: true
   file: out/make/*
   skip_cleanup: true
