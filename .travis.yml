@@ -17,11 +17,11 @@ cache:
 env:
   - NODE_INSTALLER=npm
 script:
-- npm run make $TRAVIS_OS_NAME
+- npm run make
 deploy:
   provider: releases
   api_key: $GITHUB_TOKEN
-  file: $TRAVIS_OS_NAME
+  file: out/make/*
   skip_cleanup: true
   on:
     tags: true
