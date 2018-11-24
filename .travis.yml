@@ -4,13 +4,14 @@ node_js:
 matrix:
   include:
   - os: linux
-    dist: trusty
+    dist: xenial
     sudo: required
     addons:
       apt:
         packages:
           - fakeroot
   - os: osx
+  - os: windows
 cache:
   directories:
   - node_modules
