@@ -1,8 +1,8 @@
 {
   "name": "hostero-miner",
-  "productName": "hostero-miner",
-  "version": "0.4",
-  "description": "My Electron application description",
+  "productName": "hostero-universal-miner",
+  "version": "0.4.0",
+  "description": "Universal cryptocurrency miner, for CPU minable coin",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
