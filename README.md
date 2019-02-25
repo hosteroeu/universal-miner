@@ -1,1 +1,1 @@
-# hostero-miner
+# universal-miner
